@@ -1,0 +1,157 @@
+.hero{
+    width:100%;
+    margin-top:70px;
+}
+
+.hero-container{
+    width:85%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-left{
+    width:522px;
+}
+
+.hero-left h1{
+    font-family:Montserrat,sans-serif;
+    font-size:74px;
+    line-height:100px;
+    font-weight:700;
+    color:#2F281E;
+}
+
+.hero-left p{
+    width:476px;
+    margin-top:25px;
+    font-size:26px;
+    color:#5d5d5d;
+    line-height:32px;
+}
+
+.hero-left button{
+    width:255px;
+    height:56px;
+    margin-top:35px;
+    background:#2F66F6;
+    color:white;
+    border:none;
+    border-radius:4px;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-left button:hover{
+    background:#1f4dd4;
+    transform:translateY(-2px);
+}
+
+.download{
+    margin-top:35px;
+}
+
+.download span{
+    font-size:15px;
+    color:#444;
+}
+
+.stores{
+    display:flex;
+    gap:12px;
+    margin-top:15px;
+}
+
+.stores img{
+    height:48px;
+    cursor:pointer;
+}
+
+.hero-right{
+    width:495px;
+}
+
+.hero-right img{
+    width:100%;
+    display: block;
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media(max-width:992px){
+
+.hero-container{
+    flex-direction:column;
+    align-items:center;
+    gap:120px;
+    text-align:center;
+}
+
+.hero-left{
+    width:100%;
+}
+
+.hero-left h1{
+    font-size:60px;
+    line-height:75px;
+}
+
+.hero-left p{
+    width:100%;
+}
+
+.stores{
+    justify-content:center;
+}
+
+.hero-right{
+    width: 420px;
+}
+
+.hero-right img{
+    width:100%;
+}
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media(max-width:600px){
+
+.hero{
+    margin-top:40px;
+}
+
+.hero-left h1{
+    font-size:20px;
+    line-height:55px;
+}
+
+.hero-left p{
+    font-size:20px;
+    line-height:30px;
+}
+
+.hero-left button{
+    width: 255px;
+}
+
+.hero-right{
+    width:100%;
+}
+
+.stores{
+    flex-direction:column;
+    align-items:center;
+}
+
+.stores img{
+    width:180px;
+    height:auto;
+}
+
+}

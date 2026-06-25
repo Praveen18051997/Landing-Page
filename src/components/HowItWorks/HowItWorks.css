@@ -1,0 +1,170 @@
+.how{
+    width:100%;
+    padding:110px 0;
+    background:var(--white);
+}
+
+.how-container{
+    width:85%;
+    max-width:1400px;
+    margin:auto;
+}
+
+.how-container h2{
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    color:#2F281E;
+}
+
+.how-line{
+    width:110px;
+    height:6px;
+    background:#2F66F6;
+    border-radius:20px;
+    margin:18px auto 90px;
+}
+
+/* ---------- ROW ---------- */
+
+.how-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:90px;
+    margin-bottom:90px;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+/* ---------- TEXT ---------- */
+
+.how-text{
+    width:486px;
+}
+
+.how-text h3{
+    font-size:40px;
+    font-weight:700;
+    color:#2F281E;
+    margin-bottom:18px;
+}
+
+.how-text p{
+    font-size:24px;
+    line-height:1.7;
+    color:#6B6B6B;
+}
+
+/* ---------- IMAGES ---------- */
+
+.how-row img{
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+/* Create */
+
+.create-img{
+    width:516px;
+    height:484px;
+}
+
+/* Share */
+
+.share-img{
+    width:430px;
+    height:250px;
+}
+
+/* Play */
+
+.play-img{
+    width:613px;
+    height:474px;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.how-row{
+    gap:50px;
+}
+
+.create-img{
+    width:380px;
+    height:auto;
+}
+
+.share-img{
+    width:320px;
+    height:auto;
+}
+
+.play-img{
+    width:420px;
+    height:auto;
+}
+
+.how-text{
+    width:420px;
+}
+
+.how-text h3{
+    font-size:32px;
+}
+
+.how-text p{
+    font-size:18px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.how{
+    padding:70px 0;
+}
+
+.how-container h2{
+    font-size:30px;
+}
+
+.how-line{
+    margin-bottom:60px;
+}
+
+.how-row,
+.reverse{
+    flex-direction:column;
+    text-align:center;
+    gap:35px;
+    margin-bottom:70px;
+}
+
+.how-text{
+    width:100%;
+}
+
+.create-img,
+.share-img,
+.play-img{
+    width:90%;
+    max-width:420px;
+    height:auto;
+}
+
+.how-text h3{
+    font-size:28px;
+}
+
+.how-text p{
+    font-size:17px;
+}
+
+}
