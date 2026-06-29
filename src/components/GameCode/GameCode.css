@@ -55,6 +55,12 @@
     align-items:center;
 
     padding:0 8px 0 25px;
+    transition: .35s ease;
+}
+
+.code-box:hover{
+    transform:scale(1.02);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
 }
 
 .code-box input{
@@ -77,7 +83,12 @@
 }
 
 .code-box button img{
+    transition: .3s;
     width:24px;
+}
+
+.code-box button:hover img{
+    transform:translateX(6px);
 }
 
 .more-games{

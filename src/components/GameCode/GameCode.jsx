@@ -10,7 +10,11 @@ const GameCode = () => {
 
       <div className="gamecode-box">
 
-        <img src={bg} alt="" className="game-bg" />
+        <img src={bg} 
+        alt="" 
+        className="game-bg"
+        data-aos="zoom-in"
+        />
 
         <div className="game-overlay">
 
@@ -18,9 +22,15 @@ const GameCode = () => {
             src={logo}
             alt="Kurtis Classroom"
             className="game-logo"
+            data-aos="fade-down"
+            data-aos-delay="100"
           />
 
-          <div className="code-box">
+          <div 
+          className="code-box"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          >
 
             <input
               type="text"
@@ -33,7 +43,11 @@ const GameCode = () => {
 
           </div>
 
-          <p className="try-code">
+          <p 
+          className="try-code"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          >
             Or try with 1234
           </p>
 
@@ -41,7 +55,11 @@ const GameCode = () => {
 
       </div>
 
-      <p className="more-games">
+      <p 
+      className="more-games"
+      data-aos="fade-up"
+      data-aos-delay="400"
+      >
         Still more?
         <span> Take a look to our features games</span>
       </p>

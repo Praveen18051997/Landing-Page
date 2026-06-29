@@ -185,6 +185,12 @@ font-size:20px;
     display:block;
     border-radius:32px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition: all.4s ease;
+}
+
+.gamesSwiper img:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .swiper-pagination-bullet{

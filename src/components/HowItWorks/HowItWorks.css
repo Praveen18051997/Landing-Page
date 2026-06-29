@@ -33,6 +33,7 @@
     justify-content:space-between;
     gap:90px;
     margin-bottom:90px;
+    
 }
 
 .reverse{
@@ -63,6 +64,11 @@
 .how-row img{
     object-fit:contain;
     flex-shrink:0;
+    transition: .4s ease;
+}
+
+.how-row img:hover{
+    transform:scale(1.05);
 }
 
 /* Create */
@@ -70,6 +76,7 @@
 .create-img{
     width:516px;
     height:484px;
+    animation:float 5s ease-in-out infinite;
 }
 
 /* Share */
@@ -77,6 +84,7 @@
 .share-img{
     width:430px;
     height:250px;
+    animation:float 5s ease-in-out infinite;
 }
 
 /* Play */
@@ -84,6 +92,7 @@
 .play-img{
     width:613px;
     height:474px;
+    animation:float 5s ease-in-out infinite;
 }
 
 /* ---------- Tablet ---------- */

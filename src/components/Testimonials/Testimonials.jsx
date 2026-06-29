@@ -10,37 +10,57 @@ const Testimonials = () => {
 
       <div className="testimonials-container">
 
-        <h2>Our best customers</h2>
+        <h2 data-aos="fade-up">Our best customers</h2>
 
-        <div className="testimonial-line"></div>
+        <div 
+        className="testimonial-line"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        ></div>
 
         <div className="testimonial-content">
 
           {/* Left */}
 
-          <div className="testimonial-left">
+          <div 
+          className="testimonial-left"
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          >
 
             <img
               src={speech}
               alt="Speech"
               className="speech"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             />
 
             <img
               src={customer}
               alt="Customer"
               className="customer"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             />
 
           </div>
 
           {/* Divider */}
 
-          <div className="divider"></div>
+          <div 
+          className="divider"
+          data-aos="fade-up"
+          data-aos-delay="350"
+          ></div>
 
           {/* Right */}
 
-          <div className="testimonial-right">
+          <div 
+          className="testimonial-right"
+          data-aos="fade-left"
+          data-aos-delay="1000"
+          >
 
             <h3>Martha | Norwegian Air</h3>
 
@@ -60,13 +80,19 @@ const Testimonials = () => {
               src={norwegian}
               alt="Norwegian"
               className="company-logo"
+              data-aos="zoom-in"
+              data-aos-delay="400"
             />
 
           </div>
 
         </div>
 
-        <div className="testimonial-dots">
+        <div 
+        className="testimonial-dots"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        >
           <span></span>
           <span className="active"></span>
           <span></span>

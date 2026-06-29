@@ -64,6 +64,12 @@
 
 .cta-image img{
     width:500px;
+    transition: .4s ease;
+    animation: float 4s ease-in-out infinite;
+}
+
+.cta-image img:hover{
+    transform:scale(1.05);
 }
 
 .cta-content{
@@ -88,11 +94,13 @@
     font-size:22px;
     font-weight:600;
     cursor:pointer;
-    transition:.3s;
+    transition:.35s;
 }
 
 .cta-content button:hover{
     background:#1a52e0;
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(47,102,246,.3);
 }
 
 /* ---------- Tablet ---------- */

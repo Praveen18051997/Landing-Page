@@ -10,13 +10,21 @@ const HowItWorks = () => {
 
       <div className="how-container">
 
-        <h2>How does Kurtis work?</h2>
+        <h2 data-aos="fade-up">How does Kurtis work?</h2>
 
-        <div className="how-line"></div>
+        <div 
+        className="how-line"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        ></div>
 
         {/* Create */}
 
-        <div className="how-row">
+        <div 
+        className="how-row"
+        data-aos="fade-right"
+        data-aos-delay="1000"
+        >
 
           <img src={create} 
           className="create-img"
@@ -37,7 +45,11 @@ const HowItWorks = () => {
 
         {/* Share */}
 
-        <div className="how-row">
+        <div 
+        className="how-row"
+        data-aos="fade-left"
+        data-aos-delay="1000"
+        >
 
           <div className="how-text">
 
@@ -58,7 +70,11 @@ const HowItWorks = () => {
 
         {/* Play */}
 
-        <div className="how-row">
+        <div 
+        className="how-row"
+        data-aos="fade-right"
+        data-aos-delay="1000"
+        >
 
           <img src={play} 
           className="play-img"

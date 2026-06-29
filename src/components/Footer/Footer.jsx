@@ -17,19 +17,29 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer 
+    className="footer"
+    data-aos="fade-up">
 
       <div className="footer-container">
 
         {/* Left */}
 
-        <div className="footer-brand">
+        <div 
+        className="footer-brand"
+        data-aos="fade-right"
+        data-aos-delay="100"
+        >
 
           <img src={logo} alt="Logo" className="footer-logo" />
 
           <h4>Get the app:</h4>
 
-          <div className="store-buttons">
+          <div 
+          className="store-buttons"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          >
             <img src={appStore} alt="App Store" />
             <img src={googlePlay} alt="Google Play" />
             <img src={appGallery} alt="App Gallery" />
@@ -37,7 +47,11 @@ const Footer = () => {
 
           <h4>Follow us:</h4>
 
-          <div className="social-icons">
+          <div 
+          className="social-icons"
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          >
             <FaLinkedinIn />
             <FaFacebookF />
             <FaInstagram />
@@ -49,7 +63,11 @@ const Footer = () => {
 
         {/* About */}
 
-        <div className="footer-column">
+        <div 
+        className="footer-column"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        >
           <h3>About</h3>
           <a href="#">Company</a>
           <a href="#">Leadership</a>
@@ -61,7 +79,11 @@ const Footer = () => {
 
         {/* Solutions */}
 
-        <div className="footer-column">
+        <div 
+        className="footer-column"
+        data-aos="fade-up"
+        data-aos-delay="250"
+        >
           <h3>Solutions</h3>
           <a href="#">At School</a>
           <a href="#">At Work</a>
@@ -70,7 +92,11 @@ const Footer = () => {
 
         {/* Resources */}
 
-        <div className="footer-column">
+        <div 
+        className="footer-column"
+        data-aos="fade-up"
+        data-aos-delay="350"
+        >
           <h3>Resources</h3>
           <a href="#">Study with Kurtis</a>
           <a href="#">Blog</a>
@@ -83,7 +109,11 @@ const Footer = () => {
 
         {/* Terms */}
 
-        <div className="footer-column">
+        <div 
+        className="footer-column"
+        data-aos="fade-up"
+        data-aos-delay="450"
+        >
 
           <h3>Terms and conditions</h3>
 
@@ -93,7 +123,11 @@ const Footer = () => {
           <a href="#">Children's Privacy Policy</a>
           <a href="#">Inclusion and Accessibility Policy</a>
 
-          <div className="badges">
+          <div 
+          className="badges"
+          data-aos="zoom-in"
+          data-aos-delay="700"
+          >
             <img src={microsoft} alt="Microsoft" />
             <img src={googleEducation} alt="Google Education" />
           </div>
@@ -102,7 +136,11 @@ const Footer = () => {
 
       </div>
 
-      <div className="footer-bottom">
+      <div 
+      className="footer-bottom"
+      data-aos="fade-up"
+      data-aos-delay="800"
+      >
         Copyright © 2020, Kurtis. All rights reserved.
       </div>
 

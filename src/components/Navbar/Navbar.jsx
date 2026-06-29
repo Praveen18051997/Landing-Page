@@ -9,7 +9,10 @@ const Navbar = () => {
 
 return (
   <>
-    <nav className="navbar">
+    <nav 
+    className="navbar"
+    data-aos="fade-down"
+    data-aos-duration="800">
       <div className="nav-container">
 
         <div className="nav-logo">

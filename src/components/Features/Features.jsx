@@ -34,7 +34,9 @@ const Features = () => {
 
       <div className="features-container">
 
-        <h2>
+        <h2 
+          data-aos="fade-up"
+        >
           Who is Kurtis for?
         </h2>
 
@@ -44,7 +46,13 @@ const Features = () => {
 
           {data.map((item, index) => (
 
-            <div className="feature-card" key={index}>
+            <div 
+            className="feature-card" 
+            key={index}
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay={index * 250}
+            >
 
               <img src={item.img} alt={item.title} />
 
