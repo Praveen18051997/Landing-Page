@@ -59,6 +59,20 @@ return (
     {showMenu && (
       <div className="burger-menu">
 
+        <select className="language mobile-language">
+          <option>EN</option>
+          <option>FR</option>
+          <option>ES</option>
+        </select>
+
+        <button className="signup-btn mobile-btn">
+          Sign up
+        </button>
+
+        <button className="login-btn mobile-btn">
+          Log in
+        </button>
+
         <a href="#">
           <FaBookOpen />
           <span>School</span>
