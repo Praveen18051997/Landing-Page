@@ -1,9 +1,23 @@
 :root{
+    --bg-color:#ffffff;
+    --section-bg:#ffffff;
     --primary:#2F66F6;
     --secondary:#35B5FF;
     --heading:#2F281E;
     --text:#666666;
-    --white:#ffffff;
+    --card-bg:#ffffff;
+    --nav-bg:#ffffff;
+}
+
+.dark{
+  --bg-color:#121212;
+  --section-bg:#1b1b1b;
+  --primary:#5C8DFF;
+  --secondary:#35B5FF;
+  --heading:#ffffff;
+  --text:#d1d5db;
+  --card-bg:#242424;
+  --nav-bg:#1b1b1b;
 }
 
 * {

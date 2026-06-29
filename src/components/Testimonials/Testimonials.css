@@ -1,7 +1,8 @@
 .testimonials{
     width:100%;
     padding:100px 0;
-    background:var(--primary);
+    background:linear-gradient(135deg,var(--primary), #4F46E5);
+    transition: .35s ease;
 }
 
 .testimonials-container{
@@ -15,6 +16,7 @@
     color:#fff;
     font-size:40px;
     font-weight:700;
+    text-shadow: 0 3px 18px rgba(255,255,255,.18);
 }
 
 .testimonial-line{
@@ -50,7 +52,7 @@
 }
 
 .speech:hover{
-    transform:translateY(-8px);
+    transform:translateY(-8px) rotate(-2deg);
 }
 
 .customer{
@@ -63,6 +65,7 @@
 
 .customer:hover{
     transform:scale(1.05);
+    box-shadow: 0 15px 35px rgba(255,255,255,.30);
 }
 
 /* DIVIDER */
@@ -70,13 +73,27 @@
 .divider{
     width:2px;
     height:320px;
-    background:rgba(255,255,255,.4);
+    background:linear-gradient(to bottom, transparent,rgba(255,255,255,.4), transparent);
 }
 
 /* RIGHT */
 
 .testimonial-right{
     flex:1;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+
+    padding:35px;
+    border-radius:24px;
+
+    transition:.35s ease;
+}
+
+.testimonial-right:hover{
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.12);
 }
 
 .testimonial-right h3{
@@ -101,6 +118,7 @@
 
 .company-logo:hover{
     transform:scale(1.08);
+    filter: drop-shadow(0 8px 20px rgba(255,255,255,.25));
 }
 
 /* DOTS */
@@ -116,11 +134,66 @@
     width:14px;
     height:14px;
     border-radius:50%;
-    background:#ffffff88;
+    background:rgba(255,255,255,.35);
+    transition: .35s ease;
+    cursor: pointer;
 }
 
 .testimonial-dots .active{
     background:#fff;
+
+}
+
+.dark .testimonials{
+    background:linear-gradient(135deg,#0F172A,#1E293B);
+}
+
+.dark .testimonial-right{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+}
+
+.dark .testimonial-right:hover{
+    background:rgba(255,255,255,.10);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.dark .testimonial-right h3{
+    color:var(--heading);
+}
+
+.dark .testimonial-right p{
+    color:var(--text);
+}
+
+.dark .divider{
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+}
+
+.dark .speech{
+    filter:drop-shadow(0 15px 30px rgba(0,0,0,.35));
+}
+
+.dark .customer{
+    box-shadow:0 15px 35px rgba(47,102,246,.25);
+}
+
+.dark .company-logo{
+    filter:brightness(1.15);
+}
+
+.dark .testimonial-dots span{
+    background:rgba(255,255,255,.25);
+}
+
+.dark .testimonial-dots .active{
+    background:var(--primary);
 }
 
 /* ---------- TABLET ---------- */

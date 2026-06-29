@@ -1,10 +1,10 @@
 import "./Navbar.css";
-import { FaBars, FaBookOpen, FaChalkboardTeacher, FaHome, FaMobileAlt, FaGraduationCap, FaRegNewspaper } from "react-icons/fa";
+import { FaBars, FaBookOpen, FaChalkboardTeacher, FaHome, FaMobileAlt, FaGraduationCap, FaRegNewspaper, FaMoon, FaSun } from "react-icons/fa";
 import logo from "../../assets/images/logo.png";
 import logoText from "../../assets/images/logo-text.png";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({darkMode, setDarkMode}) => {
   const [showMenu, setShowMenu] = useState(false);
 
 return (
@@ -35,6 +35,14 @@ return (
           <button className="login-btn">
             Log in
           </button>
+
+          <button 
+            className="theme-btn"
+            onClick={() => setDarkMode(!darkMode)}
+            >
+              {darkMode ? <FaSun/> : <FaMoon/>}
+          </button>
+
 
           <button
             className="menu-btn"

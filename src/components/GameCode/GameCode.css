@@ -1,6 +1,8 @@
 .gamecode{
     width:100%;
     text-align:center;
+    background:var(--bg-color);
+    transition: .35s ease;
 }
 
 .gamecode-box{
@@ -8,12 +10,20 @@
     max-width:1401px;
     margin:auto;
     position:relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
 }
 
 .game-bg{
     width:100%;
     display:block;
     border-radius:10px;
+    transition: .45s ease;
+}
+
+.gamecode-box:hover .game-bg{
+    transition:scale(1.03);
 }
 
 .game-overlay{
@@ -29,6 +39,11 @@
 .game-logo{
     width:220px;
     margin-bottom:35px;
+    transition: .35s ease;
+}
+
+.game-logo:hover{
+    transform:scale(1.08);
 }
 
 .try-code{
@@ -59,8 +74,8 @@
 }
 
 .code-box:hover{
-    transform:scale(1.02);
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(47,120,246,.25);
 }
 
 .code-box input{
@@ -69,6 +84,10 @@
     width:100%;
     font-size:18px;
     background:transparent;
+}
+
+.code-box input:focus{
+    color: #2F281E;
 }
 
 .code-box button{
@@ -88,7 +107,7 @@
 }
 
 .code-box button:hover img{
-    transform:translateX(6px);
+    transform:translateX(8px) rotate(-10deg);
 }
 
 .more-games{
@@ -98,9 +117,34 @@
 }
 
 .more-games span{
-    color:#2F66F6;
+    color:var(--primary);
+    transition: .3s;
     font-weight:700;
     cursor:pointer;
+}
+
+.more-games span:hover{
+    letter-spacing: .5px;
+}
+
+.dark .gamecode-box{
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+}
+
+.dark .code-box{
+    background:#2b2b2b;
+}
+
+.dark .code-box input{
+    color:white;
+}
+
+.dark .code-box input::placeholder{
+    color:#bdbdbd;
+}
+
+.dark .more-games{
+    color:var(--text);
 }
 
 /* Tablet */

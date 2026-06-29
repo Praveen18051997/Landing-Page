@@ -7,11 +7,16 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Testimonials from "./components/Testimonials/Testimonials";
 import CTA from "./components/CTA/CTA";
 import Footer from "./components/Footer/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(()=> {
+    return localStorage.getItem("theme") === "dark"
+  });
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -23,9 +28,13 @@ function App() {
     AOS.refresh();
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className={`App ${darkMode ? "dark" : ""}`}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <Features />
       <Games />
